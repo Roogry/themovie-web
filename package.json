@@ -1,0 +1,26 @@
+{
+  "name": "themovie-web",
+  "version": "1.0.0",
+  "description": "Themovie Web was created for submission to the Belajar Fundamental Front-End Web Development class from Dicoding. Uses technologies from ES6, Custom Element, NPM, Webpack, and AJAX.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Roogry/themovie-web.git"
+  },
+  "keywords": [
+    "ES6",
+    "custom",
+    "element",
+    "webpack",
+    "ajax"
+  ],
+  "author": "Sanchia Jodie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Roogry/themovie-web/issues"
+  },
+  "homepage": "https://github.com/Roogry/themovie-web#readme"
+}
