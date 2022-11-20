@@ -4,7 +4,7 @@
 import Swiper from 'swiper/bundle';
 import logo from '../../images/logo.png';
 
-const { getTrending, getMovies, getSeries } = require('../data/api-service');
+const { getTrending, getMovies, getSeries } = require('../services/api-service');
 
 const main = () => {
   const togglemobileMenu = $('#toggle-mobile-menu');
