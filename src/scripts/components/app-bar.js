@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 class AppBar extends HTMLElement {
   connectedCallback() {
     this.render();
@@ -11,15 +12,11 @@ class AppBar extends HTMLElement {
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <!-- Mobile menu button-->
                 <button
-                id="toggle-mobile-menu"
-                type="button"
-                class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    id="toggle-mobile-menu"
+                    type="button"
+                    class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 >
                 <span class="sr-only">Open main menu</span>
-                <!--
-                    Icon when menu is closed.
-                    Menu open: "hidden", Menu closed: "block"
-                -->
                 <svg
                     class="ham-icon h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +31,6 @@ class AppBar extends HTMLElement {
                     d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                     />
                 </svg>
-                <!--
-                    Icon when menu is open.
-                    Menu open: "block", Menu closed: "hidden"
-                -->
                 <svg
                     class="close-icon hidden h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -64,41 +57,35 @@ class AppBar extends HTMLElement {
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-4">
-                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a
-                    href="#section-hero"
-                    class="nav-item bg-gray-900 text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
-                    aria-current="page"
-                    >Home</a
+                        href="#section-hero"
+                        class="nav-item bg-gray-900 text-gray-300 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-700 hover:text-white"
+                        aria-current="page"
+                        >Home</a
                     >
                     <a
-                    href="#section-trending"
-                    class="nav-item text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    >Trending</a
+                        href="#section-trending"
+                        class="nav-item text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        >Trending</a
                     >
                     <a
-                    href="#section-movies"
-                    class="nav-item text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    >Movies</a
+                        href="#section-movies"
+                        class="nav-item text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        >Movies</a
                     >
                     <a
-                    href="#section-series"
-                    class="nav-item text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    >Series</a
+                        href="#section-series"
+                        class="nav-item text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                        >Series</a
                     >
                 </div>
                 </div>
-            </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <!-- Right Component Here -->
             </div>
             </div>
         </div>
 
-        <!-- Hide: "hidden", Show: "" -->
         <div class="hidden sm:hidden" id="mobile-menu">
             <div class="space-y-1 px-2 pt-2 pb-3">
-            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             <a
                 href="#section-hero"
                 class="nav-item-mobile bg-gray-900 text-gray-300 block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700 hover:text-white"
@@ -127,4 +114,4 @@ class AppBar extends HTMLElement {
   }
 }
 
-customElements.define("app-bar", AppBar);
+customElements.define('app-bar', AppBar);
